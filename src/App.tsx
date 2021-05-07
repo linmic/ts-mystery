@@ -1,6 +1,8 @@
 import { Router, RouteComponentProps } from '@reach/router';
 import './App.css';
 
+import LoginScreen from './LoginScreen';
+
 const HomeScreen = (_: RouteComponentProps) => <div>HomeScreen</div>;
 
 function App() {
@@ -8,7 +10,7 @@ function App() {
     <>
       <Router primary={false}>
         <HomeScreen path="/" />
-        <LoginScreen path="logine" />
+        <LoginScreen path="login" />
       </Router>
     </>
   );
